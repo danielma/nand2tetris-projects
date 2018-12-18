@@ -1,0 +1,24 @@
+CHIP Any16 {
+    IN  
+        in[16]; 
+
+    OUT 
+        out;
+
+    PARTS:
+        Or(a=in[0], b=in[1], out=outOr1);
+        Or(a=outOr1, b=in[2], out=outOr2);
+        Or(a=outOr2, b=in[3], out=outOr3);
+        Or(a=outOr3, b=in[4], out=outOr4);
+        Or(a=outOr4, b=in[5], out=outOr5);
+        Or(a=outOr5, b=in[6], out=outOr6);
+        Or(a=outOr6, b=in[7], out=outOr7);
+        Or(a=outOr7, b=in[8], out=outOr8);
+        Or(a=outOr8, b=in[9], out=outOr9);
+        Or(a=outOr9, b=in[10], out=outOr10);
+        Or(a=outOr10, b=in[11], out=outOr11);
+        Or(a=outOr11, b=in[12], out=outOr12);
+        Or(a=outOr12, b=in[13], out=outOr13);
+        Or(a=outOr13, b=in[14], out=outOr14);
+        Or(a=outOr14, b=in[15], out=out);
+}

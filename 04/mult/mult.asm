@@ -1,0 +1,30 @@
+@sum
+M=0
+@0
+D=M
+@FIN
+D;JLE
+@1
+D=M
+@FIN
+D;JLE
+
+(LOOP)
+  @0
+  D=M
+  @sum
+  M=M+D
+  @1
+  MD=M-1
+  @FIN
+  D;JLE
+  @LOOP
+  0;JMP
+(FIN)
+  @sum
+  D=M
+  @2
+  M=D
+(END)
+  @END
+  0;JMP
