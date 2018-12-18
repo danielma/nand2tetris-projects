@@ -1,20 +1,20 @@
 @sum
 M=0
-@0
+@R0
 D=M
 @FIN
 D;JLE
-@1
+@R1
 D=M
 @FIN
 D;JLE
 
 (LOOP)
-  @0
+  @R0
   D=M
   @sum
   M=M+D
-  @1
+  @R1
   MD=M-1
   @FIN
   D;JLE
@@ -23,7 +23,7 @@ D;JLE
 (FIN)
   @sum
   D=M
-  @2
+  @R2
   M=D
 (END)
   @END
